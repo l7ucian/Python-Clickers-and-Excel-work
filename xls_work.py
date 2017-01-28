@@ -1,9 +1,9 @@
 from openpyxl import load_workbook
-wb = load_workbook(filename = '//cw01.contiwan.com/root/Loc/bbuv/did35969/14_SW/zz_Work/VaDu/Worklogs/Lucian.Andercou.xlsx')
+wb = load_workbook(filename = '')         
 
 #grab worksheet by name (use active for active worksheet)
 #G la K := luni pana vineri
-ws = wb.get_sheet_by_name("Ford_CW47")
+ws = wb.get_sheet_by_name("")
 
 days = {
     'G': 'Luni',
@@ -29,4 +29,4 @@ for i in range(5,16):
 
     print('-----------------------------------------')
     print()
-#wb.save('//cw01.contiwan.com/root/Loc/bbuv/did35969/14_SW/zz_Work/VaDu/Worklogs/Lucian.Andercou.xlsx')
+#wb.save(')
