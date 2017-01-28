@@ -1,11 +1,11 @@
 from  Click_around_base import click_around
 import time, win32gui
 
-conti_password = "Conti2Pass"
+password = ""                 #your password here
 x = click_around()
 w = win32gui
-disclaimer_window = "Disclaimer"
-client_window = "VMware Horizon Client"
+
+client_window = ""            #your window name here
 login = "Login"
 # x.left_click(880, 450)  # click to check if connection possible
 # time.sleep(1)
@@ -30,7 +30,7 @@ while login != w.GetWindowText(w.GetForegroundWindow()):
     x.left_click(880, 450)  # click to check if connection possible
 
 
-x.write_mambo_jambo(conti_password)
+x.write_mambo_jambo(password)
 
 while client_window != w.GetWindowText(w.GetForegroundWindow()):
     x.left_click(880, 180)  # click to check if connection possible
